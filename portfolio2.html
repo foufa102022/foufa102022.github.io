@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chetoui Iftikhar</title>
+    <link rel="stylesheet" href="portfolio2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <span class="logo">Portfolio</span>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#travail">Projets</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#compétences">Compétences techniques</a></li>
+                <li><a href="#volunteer">travail bénévole</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#travail">Travail</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- <header id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Iftikhar Chetoui</h1>
+            <p>Développeur Full Stack & junior DevOps</p>
+            <button class="play-button" onclick="toggleAudio()">
+                <span class="play-icon"></span>
+                <span class="button-text">Jouer Musique</span>
+            </button>
+            <audio id="background-music" loop>
+                <source src="" type="audio/mpeg">
+            </audio>
+        </div>
+    </header> -->
+    <section id="certifications" class="about">
+        <div class="container">
+            <h2>Certifications</h2>
+            <button class="play-button" onclick="toggleAudio()"></button>
+            <div class="certification-wrapper">
+                <div class="certification-card">
+                    <div class="about-content" style="display: flex; align-items: center;">
+                        <div class="certification-badge" style="margin-right: 20px;">
+                            <div class="badge-glow"></div>
+                            <img src="PSMI.png" class="center-image" width="150" alt="PSM1 Badge" style="margin: 15px;">
+                        </div>
+                        <div class="certification-details">
+
+                            <h3>Professional Scrum Master™ I (PSM I)</h3>
+                            <p class="certification-issuer" style="display: flex; align-items: center;">
+                                <img src="https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png"
+                                    alt="Scrum.org" style="height: 40px; margin-right: 10px;">
+                                Scrum.org
+                            </p>
+                            <div class="certification-stats" style="margin-top: 10px;">
+                                <div class="stat" style="margin-bottom: 5px;">
+                                    <span class="stat-value" style="font-weight: bold;">98,8%</span>
+                                    <span class="stat-label">Score</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value" style="font-weight: bold;">25-01-2024</span>
+                                    <span class="stat-label">Obtention</span>
+                                </div>
+                            </div>
+                            <p style="margin-top: 15px;">
+                                En tant que Professional Scrum Master certifié, je possède une compréhension approfondie
+                                des principes Scrum et des pratiques agiles. Cette certification valide ma capacité à
+                                faciliter et guider les équipes dans l'application efficace du framework Scrum.
+                            </p>
+                            <div class="certification-skills" style="margin-top: 10px;">
+                                <span class="skill-tag"
+                                    style="padding: 5px; background-color: #f0f0f0; margin-right: 5px;">Scrum</span>
+                                <span class="skill-tag"
+                                    style="padding: 5px; background-color: #f0f0f0; margin-right: 5px;">Agile</span>
+                                <span class="skill-tag"
+                                    style="padding: 5px; background-color: #f0f0f0; margin-right: 5px;">Leadership</span>
+                                <span class="skill-tag"
+                                    style="padding: 5px; background-color: #f0f0f0;">Facilitation</span>
+                            </div>
+                            <a href="https://www.credly.com/badges/e2ea1e78-d4d0-4679-9e8b-b253b81effd8" target="_blank"
+                                style="display: flex; align-items: center; margin-top: 10px;; text-decoration: none; color: #007bff;">
+                                Vérifier la certification
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="margin-left: 5px;">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2>À Propos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="foufa.jpg" alt="Profile">
+                </div>
+                <div class="about-text">
+                    <p> Passionnée,douée et titulaire d'un master récente en DevOps et Cloud
+                        Computing. Individu énergique avec des compétences interpersonnelles,
+                        analytiques et de pensée critique exceptionnelles,junior avec une forte maîtrise des
+                        pratiques DevOps. Actuellement à la recherche d'un poste de débutant pour
+                        acquérir une expérience précieuse.</p>
+                    <p>Passionné par le développement web depuis plus de 3 ans, je crée des applications en architecture
+                        microservice.</p>
+                    <p>Spécialisé en Devops j'ai fais souvent des piplines en utilisant jenkins et githubAction aisni
+                        que des deploiements des infrastructures automatiquement en utilisant ansible, vagrant et
+                        terraforme </p>
+                    <p> </p>
+                    <div class="social-links">
+                        <a href="https://github.com/foufa102022" target="_blank" class="social-icon github"></a>
+                        <a href="https://gitlab.com/chetouiiftikhar" target="_blank" class="social-icon gitlab"></a>
+
+                        <a href="https://www.linkedin.com/in/chetoui-iftikhar-643b0625a" target="_blank"
+                            class="social-icon linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="travail" class="work">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 1">
+                    <div class="project-info">
+                        <h3>Projet 1</h3>
+                        <p>Conception et développement d'un site web de guide touristiques en appliquant l'approche
+                            DevOps dans un serveur Linux en utilisant GitHubAction.</p>
+                        <a href="https://github.com/orgs/PfeWork/repositories" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 2">
+                    <div class="project-info">
+                        <h3>Projet 2</h3>
+                        <p>Deploiement d'infrastructure automatisé en utilisant Vagrant,ansible et Terraforme dans le
+                            provider HyperV</p>
+                        <a href="https://gitlab.com/chetouiiftikhar/IAC.git" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 3">
+                    <div class="project-info">
+                        <h3>Projet 3</h3>
+                        <p>Automatisation de surveillance d'une insrastructure deployé sur docker en utilisant
+                            Prometheus et Grafana ainsi que vagrant et ansible et Terraform.</p>
+                        <a href="https://github.com/foufa102022/Automatisation-Disponibilit-.git"
+                            class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <p> c'est une petite demonstration du projet1 selon l'architecture microservice orchestré par un
+                            ApiGateway, developpé par angular et spring
+                            boot avec un base de donné SQL :</p>
+
+
+                        <video src="demo-application.mp4" width="500px" height="500px" alt="Project 1" type="video/mp4"
+                            controls style="margin-top: 0;"> </video>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <p> c'est une petite demonstration du test automatique en utilisant Selenium. Dans ce test je
+                            focalise sur la fonctionalité Login
+                            :</p>
+
+                        <video src="Projet sans titre.mp4" width="500px" height="500px" alt="Project 1" type="video/mp4"
+                            controls style="margin-top: 0;"> </video>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <p> c'est une petite demonstration d'automatisation de suivie de disponibilité de
+                            l'infrastructure en utilsant Prometheus et Grafana ainsi que alert manager pour m'alerter
+                            par mail et slack en cas de panne au niveau de serveur.
+                            :</p>
+
+
+                        <video src="Enregistrement 2023-12-08 014323.mp4" width="500px" height="500px" alt="Project 1"
+                            type="video/mp4" controls style="margin-top: 0;"> </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- outils section-->
+    <section id="compétences" class="about">
+        <div class="container">
+
+            <fieldset> <br>
+                <legend>
+                    <h2>Outils et Technologies</h2>
+                </legend>
+                <div class="tools-wrapper"
+                    style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+                    <div class="tool">
+                        <img src="icons8-docker-48.png" alt="Docker" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Docker</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-git-48.png" alt="Git" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Git</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-linux.gif" alt="Linux" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Linux</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg"
+                            alt="Jenkins" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Jenkins</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-python.gif" alt="Python" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Python</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-kubernetes-48.png" alt="Kubernetes" width="80" height="80"
+                            style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Kubernetes</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-jira-48.png" alt="Jira Software" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Jira Software</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-jetbrains-toolbox-48.png" alt="Jetbrains" width="80" height="80"
+                            style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Jetbrains</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-angular-48.png" alt="Angular" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Angular</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-vagrant-24.png" alt="Vagrant" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Vagrant</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-ansible-48.png" alt="Ansible" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Ansible</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-grafana-48.png" alt="Grafana" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Grafana</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-prometheus-48.png" alt="Prometheus" width="80" height="80"
+                            style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Prometheus</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-terraform-48.png" alt="Terraform" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">Terraform</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-postgresql-24.png" alt="PgAdmin" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">PostgreSql</p>
+                    </div>
+                    <div class="tool">
+                        <img src="icons8-mysql-24.png" alt="MySql" width="80" height="80" style="margin: 10px;">
+                        <p style="text-align: center; margin-top: 5px;">MySQl</p>
+                    </div>
+                </div>
+                <br><br>
+            </fieldset>
+            <hr>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Benevole section-->
+    <!-- <section id="volunteer" class="about">
+        <div class="container">
+            <fieldset>
+                <legend>  <h2 class="">Travail Bénévole</h2></legend>
+            <div class="tools-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+                
+                <div class="volunteer-card">
+                    <div class="">
+                        <h3 >Formatrice PSM1/PSPO</h3>
+                        <p class="volunteer-organization" style="margin-left: 20px;">ISET Tozeur, Tozeur, Tunisie</p>
+                        <p class="volunteer-duration"><ul style="margin-left: 20px;"><li>session 1 : du 12 au 14 septembre 2024</li>
+                        <li>session 2: de 13-15 février 2025</li></ul></p>
+                        <p class="volunteer-description" style="margin-left: 20px;">
+                            En tant que formatrice bénévole, je participe activement à l'animation de deux sessions de préparation à la certification en "Professional Scrum Master et Professional Scrum Product Owner " au profit des étudiants de l'ISET de Tozeur.  </p>
+                            <br><br>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+            
+        </fieldset>
+        </div>
+    </section> -->
+
+
+    <section id="volunteer" class="about">
+        <div class="container">
+            <fieldset>
+                <legend>
+                    <h2 class="">Travail Bénévole</h2>
+                </legend>
+                <table style="width: 100%; border: 1px solid #ddd; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Titre</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Organisation</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Durée</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Formatrice PSM1/PSPO
+                            </td>
+                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">ISET Tozeur, Tozeur,
+                                Tunisie</td>
+                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">
+                                <ul style="margin-left: 10px;">
+                                    <li>Session 1 : du 12 au 14 septembre 2024</li>
+                                    <li>Session 2 : du 13 au 15 février 2025</li>
+                                </ul>
+                            </td>
+                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">
+                                En tant que formatrice bénévole, je participe activement à l'animation de deux sessions
+                                de préparation à la certification en "Professional Scrum Master et Professional Scrum
+                                Product Owner" au profit des étudiants de l'ISET de Tozeur.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Resume Section -->
+    <section id="cv" class="resume">
+        <div class="container">
+            <h2>Mon Profil En PDF</h2>
+
+            <div class="download-cv">
+                <a href="https://drive.usercontent.google.com/u/0/uc?id=1UpisSifYYoG_smGg-IlwGVQY_4zTaBgJ&export=download"
+                    class="download-button">
+                    <span class="download-icon"></span>
+                    Télécharger CV .pdf
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1UpisSifYYoG_smGg-IlwGVQY_4zTaBgJ/view?usp=sharing"
+                    class="download-button">
+                    <i class="fa fa-eye"></i>
+                    Cliquez ici pour Voir le CV
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Iftikhar Chetoui. DevOps(Junior).</p>
+                <div class="footer-social">
+                    <a href="https://www.youtube.com/@chetouiiftikhar2870/videos" target="_blank" class="youtube-btn">
+                        Suivez-moi sur YouTube
+                    </a>
+                    <a href="mailto:chetouiiftikhar@gmail.com" class="social-icon mail"></a>
+                    <a href="https://github.com/foufa102022" target="_blank" class="social-icon github"></a>
+                    <a href="https://www.linkedin.com/in/chetoui-iftikhar-643b0625a" target="_blank"
+                        class="social-icon linkedin"></a>
+                    <a href="https://gitlab.com/chetouiiftikhar" target="_blank" class="social-icon gitlab"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function toggleAudio() {
+            const audio = document.getElementById('background-music');
+            const button = document.querySelector('.play-button');
+            const buttonText = button.querySelector('.button-text');
+
+            if (audio.paused) {
+                audio.play();
+                button.classList.add('playing');
+                buttonText.textContent = 'Pause Musique';
+            } else {
+                audio.pause();
+                button.classList.remove('playing');
+                buttonText.textContent = 'Jouer Musique';
+            }
+        }
+    </script>
+</body>
+
+</html>
