@@ -67,7 +67,7 @@ Un portfolio professionnel moderne présentant mes compétences, projets et exp�
 
 ## 📞 Contact
 
-Pour toute question ou opportunité de collaboration, n'hésitez pas à me contacter via le formulaire de contact sur le site ou directement par email.
+Pour toute question ou opportunité de collaboration, n'hésitez pas à me contacter directement par email.
 
 ---
 © 2025 Iftikhar Chetoui. DevOps(Junior).
